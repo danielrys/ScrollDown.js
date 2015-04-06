@@ -1,0 +1,31 @@
+{
+  "name": "ScrollDown.js",
+  "version": "1.0.0",
+  "authors": [
+    "Vojtěch Klos <vojta.klos@gmail.com>"
+  ],
+  "description": "Simple wrapper for smoothscrolling. Scroll like crazy!",
+  "main": "dist/scrolldown.min.js",
+  "keywords": [
+  	"scrolldown",
+  	"scrolldownjs",
+    "scroll",
+    "down",
+    "smoothscroll",
+    "smooth",
+    "scroll",
+    "smoothscrolljs"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "index.html"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3"
+  }
+}
