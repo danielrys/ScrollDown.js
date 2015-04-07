@@ -1,5 +1,8 @@
 function ScrollDown(elem, scrollTo, speed) {
 	this.elem = elem;
+	if (!scrollTo) {
+		scrollTo = $(elem).attr('href');
+	}
 	this.scrollTo = scrollTo;
 	if (!speed) {
 		speed = 400;
