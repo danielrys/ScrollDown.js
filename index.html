@@ -8,8 +8,8 @@
 			height: 4000px;
 		}
 		.st {
-			position: absolute;
-			top: 3000px;
+			position: relative;
+			margin-top: 8000px;
 		}
 	</style>
 </head>
@@ -18,5 +18,8 @@
 	<div class="st">TO</div>
 	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="src/scrolldown.js"></script>
+	<script type="text/javascript">
+	var scroll = new ScrollDown('.sf', '.st', 1000);
+	</script>
 </body>
 </html>
