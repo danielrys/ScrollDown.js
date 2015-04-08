@@ -8,9 +8,9 @@ function ScrollDown(elem, scrollTo, speed) {
 		speed = 400;
 	}
 	this.speed = speed;
-
+	
 	trueSpeed = Math.abs($(window).scrollTop() - $(scrollTo).offset().top) / (speed / 100);
-	console.log(trueSpeed);
+
 	this.scroll = function () {
 		var scrollToOffset = $(scrollTo).offset().top;
 		$(elem).on('click', function() {
