@@ -9,7 +9,11 @@ function ScrollDown(elem, scrollTo, speed) {
 	}
 	this.speed = speed;
 	
-	trueSpeed = Math.abs($(window).scrollTop() - $(scrollTo).offset().top) / (speed / 100);
+	if(typeof scrollTo != 'undefined' && $(scrollTo).length) {
+		trueSpeed = Math.abs($(window).scrollTop() - $(scrollTo).offset().top) / (speed / 100);
+	} else {
+		return;	
+	}
 
 	this.scroll = function () {
 		var scrollToOffset = $(scrollTo).offset().top;
